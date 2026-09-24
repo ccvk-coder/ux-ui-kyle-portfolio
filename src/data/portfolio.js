@@ -15,9 +15,9 @@ import {
 
 export const profile = {
   name: "Kyle",
-  fullName: "Christ Vein Cabalida",
+  fullName: "CVK Cabalida",
   title: "UX/UI Designer & Digital Product Builder",
-  greeting: "Hello, I'm Kyle.",
+  greeting: "Hello, I'm Christ Vein "Kyle" Cabalida.",
   intro:
     "Designing intuitive digital experiences and building practical systems that connect people, technology, and business.",
   status: "Available for Projects",
