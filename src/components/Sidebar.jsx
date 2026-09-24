@@ -42,7 +42,7 @@ const ProfileBlock = () => (
 export const DesktopSidebar = () => (
   <nav
     aria-label="Main"
-    className="glass sticky top-6 hidden h-[calc(100dvh-3rem)] w-64 shrink-0 flex-col justify-between p-5 lg:flex"
+    className="glass sticky top-6 hidden h-[calc(100dvh-3rem)] w-72 shrink-0 flex-col justify-between p-5 lg:flex"
   >
     <div>
       <ProfileBlock />
