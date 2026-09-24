@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
 
 function HomePage() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-12">
       <FadeIn>
         <GlassCard as="section" className="overflow-hidden p-7 sm:p-10">
           <StatusBadge label={profile.status} />
