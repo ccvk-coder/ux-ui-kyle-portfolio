@@ -58,21 +58,12 @@ function WorkPage() {
         ))}
       </div>
 
-      <div className="grid gap-4 xl:grid-cols-2">
-        <AnimatePresence mode="popLayout">
-          {visible.map((project) => (
-            <motion.div
-              key={project.id}
-              layout
-              initial={{ opacity: 0, scale: 0.97 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.97 }}
-              transition={{ duration: 0.25, ease: "easeOut" }}
-            >
-              <ProjectCard project={project} onOpen={setSelected} />
-            </motion.div>
-          ))}
-        </AnimatePresence>
+      <div key={active} className="grid gap-4 xl:grid-cols-2">
+        {visible.map((project, index) => (
+          <FadeIn key={project.id} delay={0.05 * index} className="h-full">
+            <ProjectCard project={project} onOpen={setSelected} />
+          </FadeIn>
+        ))}
       </div>
 
       <ProjectModal project={selected} onClose={() => setSelected(null)} />
