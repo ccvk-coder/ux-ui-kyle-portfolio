@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { AnimatePresence, motion } from "framer-motion";
 import { filters, projects } from "@/data/portfolio";
 import FadeIn from "@/components/FadeIn";
 import PageHeader from "@/components/PageHeader";

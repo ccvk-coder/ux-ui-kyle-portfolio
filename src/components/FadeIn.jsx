@@ -1,14 +1,13 @@
-import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
+/** One entrance animation, CSS only, honours prefers-reduced-motion via styles.css. */
 const FadeIn = ({ delay = 0, className, children }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 14 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.4, delay, ease: "easeOut" }}
-    className={className}
+  <div
+    className={cn("animate-in fade-in slide-in-from-bottom-3 duration-500 fill-mode-both", className)}
+    style={delay ? { animationDelay: `${delay}s` } : undefined}
   >
     {children}
-  </motion.div>
+  </div>
 );
 
 export default FadeIn;
