@@ -1,4 +1,5 @@
 import { DesktopSidebar, MobileNav, MobileTopBar } from "./Sidebar";
+import GlobalSearch from "./GlobalSearch";
 
 const AppShell = ({ children }) => {
   return (
@@ -11,6 +12,7 @@ const AppShell = ({ children }) => {
       </a>
       <DesktopSidebar />
       <div className="min-w-0 flex-1">
+        <GlobalSearch />
         <MobileTopBar />
         <main id="main" className="pb-28 lg:pb-6">
           {children}
