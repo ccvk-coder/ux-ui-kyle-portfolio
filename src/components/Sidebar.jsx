@@ -26,12 +26,11 @@ const NavList = ({ onNavigate }) => (
 
 const ProfileBlock = () => (
   <div className="flex items-center gap-3">
-    <span
-      aria-hidden="true"
-      className="grid size-12 shrink-0 place-items-center rounded-full bg-gradient-to-br from-primary to-secondary text-sm font-extrabold text-primary-foreground"
-    >
-      {profile.initials}
-    </span>
+    <img
+      src={profile.avatar}
+      alt={profile.fullName}
+      className="size-12 shrink-0 rounded-full object-cover ring-2 ring-primary/50"
+    />
     <div className="min-w-0">
       <p className="truncate font-bold">{profile.fullName}</p>
       <p className="truncate text-xs text-muted-foreground">{profile.meta.role}</p>
