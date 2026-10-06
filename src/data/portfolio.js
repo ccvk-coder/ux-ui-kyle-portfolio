@@ -1,3 +1,4 @@
+import avatarAsset from "@/assets/kyle-avatar.jpeg.asset.json";
 import {
   Home,
   User,
@@ -22,6 +23,7 @@ export const profile = {
     "Designing intuitive digital experiences and building practical systems that connect people, technology, and business.",
   status: "Available for Projects",
   initials: "CV",
+  avatar: avatarAsset.url,
   meta: {
     role: "UX/UI Designer",
     specialization: "Digital Product Design",

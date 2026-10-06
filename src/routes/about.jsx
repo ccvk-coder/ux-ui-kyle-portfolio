@@ -62,12 +62,11 @@ function AboutPage() {
 
         <GlassCard as="aside" aria-label="Profile information" className="flex flex-col gap-4">
           <div className="flex flex-col items-center gap-3 text-center">
-            <span
-              aria-hidden="true"
-              className="grid size-24 place-items-center rounded-full bg-gradient-to-br from-primary to-secondary text-2xl font-extrabold text-primary-foreground"
-            >
-              {profile.initials}
-            </span>
+            <img
+              src={profile.avatar}
+              alt={profile.fullName}
+              className="size-24 rounded-full object-cover ring-2 ring-primary/50"
+            />
             <div>
               <p className="font-bold">{profile.fullName}</p>
               <p className="text-xs text-muted-foreground">{profile.meta.role}</p>
