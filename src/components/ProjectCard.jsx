@@ -4,7 +4,7 @@ import ProjectPreview from "./ProjectPreview";
 
 const ProjectCard = ({ project, onOpen }) => (
   <GlassCard as="article" interactive className="flex flex-col gap-4">
-    <ProjectPreview hue={project.hue} label={project.name} />
+    <ProjectPreview hue={project.hue} label={project.name} image={project.image} />
     <div className="flex flex-col gap-2">
       <p className="label-eyebrow">{project.category}</p>
       <h3 className="text-lg font-bold">{project.name}</h3>
