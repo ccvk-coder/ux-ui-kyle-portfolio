@@ -1,4 +1,8 @@
 import avatarAsset from "@/assets/kyle-avatar.jpeg.asset.json";
+import unifiedSystemAsset from "@/assets/unified-system.png.asset.json";
+import gymAsuraAsset from "@/assets/gym-asura.png.asset.json";
+import careerEmpireoneAsset from "@/assets/career-empireone.png.asset.json";
+import empireoneHealthAsset from "@/assets/empireone-health.png.asset.json";
 import {
   Home,
   User,
