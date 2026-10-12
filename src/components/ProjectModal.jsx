@@ -39,6 +39,7 @@ const ProjectModal = ({ project, onClose }) => (
               <ProjectPreview
                 hue={project.hue}
                 label={project.name}
+                image={project.image}
                 className="aspect-[16/10] sm:col-span-2"
               />
               <div className="inset-panel flex flex-col gap-4 p-4">
