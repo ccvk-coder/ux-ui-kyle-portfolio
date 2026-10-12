@@ -161,22 +161,23 @@ export const projects = [
   {
     id: "career-empireone",
     name: "Career EmpireOne",
-    category: "Enterprise HR / UX/UI",
-    tags: ["UX/UI", "Systems"],
+    category: "Careers Platform / UX/UI",
+    tags: ["UX/UI", "Web", "Systems"],
     hue: 294,
     summary:
-      "A modern HR platform designed to manage employee information, schedules, HR workflows, and administrative processes.",
+      "A careers portal designed to present open roles and guide applicants through one clear application flow.",
     role: "UX/UI Designer",
     tools: ["Figma", "React", "Tailwind"],
     overview:
-      "Employee records, schedules, and HR approvals brought into one administrative workspace.",
+      "Open roles, role details, and applications brought into one careers site instead of scattered job posts and email threads.",
     challenge:
-      "Administrative processes were paper- and spreadsheet-driven, which made approvals slow and records inconsistent.",
+      "Roles were advertised in several places and applications arrived through different channels, so nothing sat in one pipeline.",
     solution:
-      "Table-first layouts for records, clear request and approval states, and a scheduling view built for scanning rather than reading.",
+      "A role listing built for scanning, a short application flow with visible progress, and one applicant view that keeps each submission in a clear state.",
     contribution:
-      "Designed the screens, defined the table and form patterns, and documented the flows for development handoff.",
-    result: "A structured HR workspace that replaces scattered manual tracking.",
+      "Mapped the applicant journey, designed the listing, role, and application screens in Figma, and documented the states for development handoff.",
+    result:
+      "A single careers entry point where someone can find a role and apply without leaving the site.",
   },
   {
     id: "custom-systems",
