@@ -114,7 +114,7 @@ export const expertise = [
   },
 ];
 
-export const filters = ["All", "UX/UI", "Web", "Mobile", "Systems"];
+export const filters = ["All", "UX/UI", "Web", "Systems"];
 
 export const projects = [
   {
