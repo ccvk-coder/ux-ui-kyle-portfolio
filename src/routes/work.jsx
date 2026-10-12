@@ -18,7 +18,7 @@ export const Route = createFileRoute("/work")({
       { property: "og:title", content: "Work — Enterprise systems and product design" },
       {
         property: "og:description",
-        content: "Case studies covering HR platforms, gym management, and custom business systems.",
+        content: "Case studies covering an employee platform, careers, gym management, and custom business systems.",
       },
     ],
   }),
