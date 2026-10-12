@@ -114,7 +114,7 @@ export const expertise = [
   },
 ];
 
-export const filters = ["All", "UX/UI", "Web", "Mobile", "Systems"];
+export const filters = ["All", "UX/UI", "Web", "Systems"];
 
 export const projects = [
   {
@@ -180,23 +180,24 @@ export const projects = [
       "A single careers entry point where someone can find a role and apply without leaving the site.",
   },
   {
-    id: "custom-systems",
-    name: "Custom Business Systems",
-    category: "Web Development / System Development",
-    tags: ["Web", "Systems", "Mobile"],
-    hue: 230,
-    summary: "Custom digital solutions designed around specific business requirements.",
+    id: "empireone-health",
+    name: "EmpireOne Health",
+    category: "Health Platform / UX/UI",
+    tags: ["UX/UI", "Web", "Systems"],
+    hue: 190,
+    summary: "A health platform designed to keep care information clear and easy to reach.",
     role: "UX/UI Designer / Frontend Developer",
     tools: ["Figma", "Webflow", "Framer", "React", "Tailwind"],
     overview:
-      "Websites and internal tools built for businesses whose processes don't fit off-the-shelf software.",
+      "A health-focused product that brings the information and admin tasks around care into one place.",
     challenge:
-      "Each engagement starts from a different process, so requirements have to be established before anything is designed.",
+      "Health workflows involve a lot of detail and sensitive information, so the interface has to stay simple without hiding what matters.",
     solution:
-      "A repeatable approach: map the current process, define the requirements, design the interface, then build with reusable components.",
+      "One calm layout that groups health information, schedules, and records into a single clear flow, with the most needed actions always within reach.",
     contribution:
-      "Ran discovery with the client, produced the requirements and flows, designed the interface, and implemented the frontend.",
-    result: "Systems shaped around how each business actually works.",
+      "Mapped the user journey, designed the key screens in Figma, documented the states for handoff, and implemented the frontend.",
+    result:
+      "A single place where health information and everyday admin are handled without switching between tools.",
   },
 ];
 
