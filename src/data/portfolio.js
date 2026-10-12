@@ -159,8 +159,8 @@ export const projects = [
     result: "A single operational view that front-desk staff can run a shift from.",
   },
   {
-    id: "hr-system",
-    name: "HR Management System",
+    id: "career-empireone",
+    name: "Career EmpireOne",
     category: "Enterprise HR / UX/UI",
     tags: ["UX/UI", "Systems"],
     hue: 294,
