@@ -127,6 +127,7 @@ export const projects = [
     category: "Enterprise System / UX/UI",
     tags: ["UX/UI", "Systems"],
     hue: 264,
+    image: unifiedSystemAsset.url,
     summary:
       "A unified employee and applicant platform designed to streamline HR, employee engagement, recruitment, and internal company workflows.",
     role: "UX/UI Designer / System Analyst",
@@ -148,6 +149,7 @@ export const projects = [
     category: "Gym Management System",
     tags: ["Systems", "Web", "UX/UI"],
     hue: 199,
+    image: gymAsuraAsset.url,
     summary:
       "A customizable gym management platform for memberships, attendance, trainers, POS, inventory, and business management.",
     role: "UX/UI Designer / System Analyst",
@@ -168,6 +170,7 @@ export const projects = [
     category: "Careers Platform / UX/UI",
     tags: ["UX/UI", "Web", "Systems"],
     hue: 294,
+    image: careerEmpireoneAsset.url,
     summary:
       "A careers portal designed to present open roles and guide applicants through one clear application flow.",
     role: "UX/UI Designer",
@@ -189,6 +192,7 @@ export const projects = [
     category: "Health Platform / UX/UI",
     tags: ["UX/UI", "Web", "Systems"],
     hue: 190,
+    image: empireoneHealthAsset.url,
     summary: "A health platform designed to keep care information clear and easy to reach.",
     role: "UX/UI Designer / Frontend Developer",
     tools: ["Figma", "Webflow", "Framer", "React", "Tailwind"],
