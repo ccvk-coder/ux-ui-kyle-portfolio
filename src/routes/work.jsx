@@ -13,12 +13,13 @@ export const Route = createFileRoute("/work")({
       {
         name: "description",
         content:
-          "Selected work: EmpireOne Unified System, GymAsura, Career EmpireOne, and custom business systems.",
+          "Selected work: EmpireOne Unified System, GymAsura, Career EmpireOne, and EmpireOne Health.",
       },
       { property: "og:title", content: "Work — Enterprise systems and product design" },
       {
         property: "og:description",
-        content: "Case studies covering an employee platform, careers, gym management, and custom business systems.",
+        content:
+          "Case studies covering an employee platform, careers, gym management, and a health platform.",
       },
     ],
   }),
