@@ -2,6 +2,10 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  vite: {
+    // Vite 8 resolves the "@" alias from tsconfig.json natively — no plugin needed.
+    resolve: { tsconfigPaths: true },
+  },
   tanstackStart: {
     server: { entry: "server" },
     // Static export: writes real index.html files for every page into dist/client
