@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+"build": "vite build",
+    "postbuild": "node scripts/prepare-hosting.mjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
@@ -65,7 +66,7 @@
     "tailwindcss": "^4.2.1",
     "tw-animate-css": "^1.3.4",
     "vaul": "^1.1.2",
-    "vite-tsconfig-paths": "^6.0.2",
+    "vite-tsconfig-paths": "file:stubs/vite-tsconfig-paths",
     "zod": "^3.25.76"
   },
   "devDependencies": {
