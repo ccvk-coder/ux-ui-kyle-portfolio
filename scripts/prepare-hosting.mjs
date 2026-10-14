@@ -13,11 +13,18 @@ import path from "node:path";
 if (process.env.LOVABLE_SANDBOX === "1") process.exit(0);
 
 const root = process.cwd();
-const clientDir = path.join(root, "dist", "client");
 const publicDir = path.join(root, "public");
 
-if (!existsSync(clientDir)) {
-  console.warn("[postbuild] dist/client not found — nothing copied to public/.");
+// Build output location differs by environment: Lovable builds write
+// dist/client, plain hosting builds write .output/public. Accept either.
+const candidates = [
+  path.join(root, "dist", "client"),
+  path.join(root, ".output", "public"),
+];
+const clientDir = candidates.find((dir) => existsSync(dir));
+
+if (!clientDir) {
+  console.warn("[postbuild] Build output not found — nothing copied to public/.");
   process.exit(0);
 }
 
