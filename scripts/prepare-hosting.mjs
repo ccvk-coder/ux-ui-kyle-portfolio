@@ -40,6 +40,11 @@ rmSync(path.join(publicDir, "assets"), { recursive: true, force: true });
 // route folders (when present).
 cpSync(clientDir, publicDir, { recursive: true });
 
+// favicon.ico / robots.txt live in static/ (Vite's publicDir); make sure the
+// hosted site carries them too.
+const staticDir = path.join(root, "static");
+if (existsSync(staticDir)) cpSync(staticDir, publicDir, { recursive: true });
+
 for (const route of routes) {
   const dir = path.join(publicDir, route);
   mkdirSync(dir, { recursive: true });
@@ -48,4 +53,4 @@ for (const route of routes) {
   }
 }
 
-console.log("[postbuild] Copied dist/client into public/ (index.html + assets + route folders).");
+console.log("[postbuild] Copied " + path.relative(root, clientDir) + " into public/ (index.html + assets + route folders).");

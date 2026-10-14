@@ -5,6 +5,9 @@ export default defineConfig({
   vite: {
     // Vite 8 resolves the "@" alias from tsconfig.json natively — no plugin needed.
     resolve: { tsconfigPaths: true },
+    // Static files (favicon, robots.txt) live in static/ so that public/ can hold
+    // the finished, committed site that the hosting panel serves.
+    publicDir: "static",
   },
   tanstackStart: {
     server: { entry: "server" },
