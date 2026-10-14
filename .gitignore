@@ -30,13 +30,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Build output copied into public/ by scripts/prepare-hosting.mjs
-# (only outside the Lovable sandbox)
-/public/index.html
-/public/assets/
-/public/about/
-/public/expertise/
-/public/work/
-/public/process/
-/public/contact/
